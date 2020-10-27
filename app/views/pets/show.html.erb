@@ -1,23 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Species:</strong>
-  <%= @pet.species %>
+  <%= @pet.name %> the <%= @pet.species %>
 </p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @pet.name %>
+  <strong>Age:</strong>
+  <%= Time.now.year - @pet.year_of_birth %>
 </p>
-
 <p>
-  <strong>Year of birth:</strong>
-  <%= @pet.year_of_birth %>
+  <strong>Good with kids:</strong>
+  <%=  @pet.good_with_kids? ? "Good with children" : "Prefers a home without children" %>
 </p>
-
 <p>
   <strong>Image:</strong>
-  <%= @pet.image_url %>
   <%= image_tag("#{@pet.image_url}", :alt => "dog pick") %>
 </p>
 

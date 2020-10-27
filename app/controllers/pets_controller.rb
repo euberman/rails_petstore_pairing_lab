@@ -12,6 +12,11 @@ class PetsController < ApplicationController
   def show
   end
 
+  def show_dogs
+    @pets = Pet.where(species: "dog")
+    render "index"
+  end
+
   # GET /pets/new
   def new
     @pet = Pet.new

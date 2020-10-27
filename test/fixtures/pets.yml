@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  species: MyString
+  name: MyString
+  year_of_birth: 1
+
+two:
+  species: MyString
+  name: MyString
+  year_of_birth: 1
